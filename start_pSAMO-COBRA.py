@@ -34,7 +34,7 @@ if __name__ == '__main__':
     # One solution per iteration usually leads to less required function evaluations to find the pareto frontier, 
     # however if you can evaluate objective function in parrallel, you can chose a higher number and this way save wall clock time
     feval = 80 # number of allowed functionevaluations, so in case of 5 solutions per iteration, you will do 80/5=16 iterations
-    useAllCores = True # set to false, if you want to debug and not run in a separate console (e.g. when you want to run in spyder console)
+    useAllCores = True # define if you want to use all cores in during the process, if false you will only use one core
     cobra = pSAMO_COBRA_Init(fn, nConstraints, ref, lower, upper, feval, batch=batch, useAllCores=useAllCores) # initilization phase
     cobra = pSAMO_COBRA_PhaseII(cobra) # optimization phase
     # in cobra dictionary you can find a lot of details about the optimization run
