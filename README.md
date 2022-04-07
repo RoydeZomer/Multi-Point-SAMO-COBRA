@@ -38,5 +38,4 @@ if __name__ == '__main__':
     cobra = pSAMO_COBRA_Init(fn, nConstraints, ref, lower, upper, feval, batch=batch, useAllCores=useAllCores) # initilization phase
     cobra = pSAMO_COBRA_PhaseII(cobra) # optimization phase
     # in cobra dictionary you can find a lot of details about the optimization run
-    
-    ```
+```
