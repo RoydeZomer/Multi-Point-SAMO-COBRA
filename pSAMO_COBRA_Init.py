@@ -67,7 +67,7 @@ def pSAMO_COBRA_Init(fn, nConstraints, ref, originalL, originalU, feval=None,
     lower = np.array([newlower]*dimension)
     upper = np.array([newupper]*dimension)
     
-    l = newlower-newupper
+    l = newupper-newlower
     if epsilonInit is None:
         epsilonInit = [0.02*l]*nConstraints
     if epsilonMax is None:
